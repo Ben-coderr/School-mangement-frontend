@@ -1,0 +1,551 @@
+next-dashboard-ui-completed/
+├── .idea/
+│   ├── inspectionProfiles/
+│   │   └── Project_Default.xml
+│   ├── .gitignore
+│   ├── git_toolbox_blame.xml
+│   ├── modules.xml
+│   ├── next-dashboard-ui-completed.iml
+│   ├── vcs.xml
+│   └── workspace.xml
+├── .next/
+│   ├── cache/
+│   │   ├── images/
+│   │   │   ├── +wdIS48iya4sYUXxwF96Z2uvMumKjZr9CobNU1QT1KM=/
+│   │   │   │   └── 60.1746209113953.Y8GBi6H1ya6osHfkg14HNh0fmroZbAaR5X6oxoy1GaY=.webp
+│   │   │   ├── -0B3kI+Q6RCwq6kvDEHq5qb0wYFKueA13tpGXUSGmyw=/
+│   │   │   │   └── 60.1746209113883.FJz1eDYVZEZVbVwaMSYFETa5hBw+yOW81zDvLlHPhZA=.webp
+│   │   │   ├── 0qgS37AM4hrWoFh4viSDbLr1ukjZLRFNv3gbPl1qqc8=/
+│   │   │   │   └── 60.1746209113763.6wX2Zb88KXrvkVgFP41wuRK4bmZRmBFtYgK52q-igyA=.webp
+│   │   │   ├── 2t2AI8yfao0nmTD-Gc17TbQWo3jefT5nE5HyZPjAiI0=/
+│   │   │   │   └── 60.1745831411985.ujTpzgIF3EjZWK5HWDatmO+vOl0leJVBfs1FU3de0Ss=.webp
+│   │   │   ├── 4cy17-4uJWh7sUnRR6UystH032ihYGbeSbVBkm6eWYo=/
+│   │   │   │   └── 60.1746209302599.KCBKaUb1M8UA3AiHqKuwVz0gAvX7C92NTCPuXThu0n4=.webp
+│   │   │   ├── 4UlYiYgJMOtl032Mj-5fqUjPGuPxVIO4z9QMUE6W1Uk=/
+│   │   │   │   └── 60.1746212012128.09AH-33FAB-x4s2IdveOIrtoz2LJVBfWc3T6hDLfoi4=.webp
+│   │   │   ├── 5D3LT6HCT5OHxCc1lzUoUyr0Jzx9OjFXlzT-Cu1Hv-I=/
+│   │   │   │   └── 60.1746209113988.FnbLXYIcv76yBLNBpZLPUNXaoj3WRFvlfOY58Xc301M=.webp
+│   │   │   ├── 6gT8b8+cKEFAoAjPOH6lr7R3OeEFK8qSWgWILOAgrOM=/
+│   │   │   │   └── 60.1746212012166.VTUAwvC03i+0kBAxMvb0Zt-CCazaSepfdaMqxkc+s3M=.webp
+│   │   │   ├── 6L+BOU1f73fI-6T8F4vLgMnCMz36cyYywsYTP+s2XeQ=/
+│   │   │   │   └── 60.1746209114011.Vel7iebbUoAx0S+fa5zFP538fvolH1o7Zy4yO53cnRM=.webp
+│   │   │   ├── 6shMDjUnhHG66Or39JjWdTfs1Pz5xxPsJKTpDNyyHtU=/
+│   │   │   │   └── 60.1746209114043.SqcPB8MdVSVHymLsg1NIrvc2M1Q4bGbDREFZkWuzMbM=.webp
+│   │   │   ├── 8ClMu1jzZtib06w8SYAeyff+8Enym774Mba-E7V0Zkw=/
+│   │   │   │   └── 60.1746209302607.QYd-T1i34DKEDNRaTk8rrB3ycEbkjlJRJYH0vPeVmZE=.webp
+│   │   │   ├── 8fM9RLrxGcEKsw-ExegquhZed9ZOPf0J-gCC7zpPoMQ=/
+│   │   │   │   └── 60.1746212011883.9XoqNDyRCVDnHSoxlm0bSMpjp4iMy0SkGzs3bHF01Lc=.webp
+│   │   │   ├── 8Fw8zXFfUEXgckqowYgSd5z2c8m5zm8xKX6w7iO0cF0=/
+│   │   │   │   └── 60.1746209302645.rIGsUS6ZPCc8Vlc5ZfAc0jirVQKRJ7aLMZqdKB3+yjU=.webp
+│   │   │   ├── 8ZhlgNcDiWNLAz-m4JW7kq22UTJKD76z+3+Pvs5aYGY=/
+│   │   │   │   └── 31536000.1770848169486.lYgdUvIe7NTuLIYHf3TLMYhIrdJsUNZSeHIERGTVicw=.webp
+│   │   │   ├── A8F3jQpfvQVEmjxNbn-Eh0MO6kKQZ8HnMXtPTKLdlMU=/
+│   │   │   │   └── 60.1746212011965.RlBOVLyCe+wDFxAAVv22fWnsv92W+y3jbpc5gTw6XP0=.webp
+│   │   │   ├── AK-ZuJq6A2XqSgHNly0clfZ6AfBuYCJ-ImITVCr9nGg=/
+│   │   │   │   └── 60.1746212012113.sFibYRnctX-karlo4vNrRaEeFMnQeSk5ulzrS179j6w=.webp
+│   │   │   ├── aM7StgA-Klvt2CpsA9STm86GOVk6b0QuVRg9eINAbv4=/
+│   │   │   │   └── 60.1746212012160.Fb4C40KPvhQlawLvtGlULmdnmB2u+EICVgTC60Gn6mY=.webp
+│   │   │   ├── AYxM44oUaMtakClfmiw5AWX93mJcG0ZguXOBwIMk7Hg=/
+│   │   │   │   └── 31536000.1770848167781.cgAOqFLfAWOiAULKrGXW0e1gG8MPJxa9ggPwtPLGeGo=.webp
+│   │   │   ├── az7sQnyv9Gz82kKLrjL7cPqInRUa0KPrQ0Q5YT0Ap8I=/
+│   │   │   │   └── 60.1746209141412.YUxoIsj19PpQG4sqDFMHG66yiprZn7m0EKCUF77QMVU=.webp
+│   │   │   ├── bO+II347HQDSORSAmCuN92rVaXWeaGsowwKmfpved9E=/
+│   │   │   │   └── 60.1746209113866.XblXN7+QoPC-11cy-9bK7dxkap7hPfflcVToLrINLeg=.webp
+│   │   │   ├── bvz2VeLiFGjfjQKAmR+NkdplW5KqXdGcH04moFIICwc=/
+│   │   │   │   └── 60.1746212012123.4KkgN-mqAry3k08lpGlo8stuDwLO7SfRzPub2DhgdHc=.webp
+│   │   │   ├── bZbqgN9UOuictSJksMfj6N8Z82A61c6-IumFZSXeHQk=/
+│   │   │   │   └── 60.1746212012077.vanx5pPImo+fsacuAPfBHY0H3se1N7rqOmlnO8+HPok=.webp
+│   │   │   ├── cV8NmpS8j13XturMhCQ5RSFWSDy4KRPExz2toC298oY=/
+│   │   │   │   └── 60.1746209114087.4o8HETlGQ9Ne0Cl-NmsN8rkKN4Qz1OGYAhQ1iEbIo8o=.webp
+│   │   │   ├── D9pfJfoysWk1h+N15KALovGvdc1Hgi4K7K-dhp4MBTg=/
+│   │   │   │   └── 60.1746209302616.pHX2hkjs5Ktgc1ESX2fIs0nl9hDOvZBhwLWYoG9qFv8=.webp
+│   │   │   ├── EG9oHLcaPDIwCEIqsakE+6mUP-6IDmyxyCn37pfn99Y=/
+│   │   │   │   └── 60.1746209113735.ZHCh6xHHVxERn4TBaYcR2MhVto8lg-ZYTRcD2Cq0g54=.webp
+│   │   │   ├── EondPEyGnQ7cWjljBXka4UWpMvBk0-DIZo7hxnFaoR4=/
+│   │   │   │   └── 60.1746209302627.pg8noV5reZqwtr49AVc1cm4OomvzZ3csG-JsqCMUjJk=.webp
+│   │   │   ├── fumndPpQAq+Q6BEtaxWZg20GIqYhdx6LrKUYdqyZ76Y=/
+│   │   │   │   └── 31536000.1770848167659.crgrQc9hqMBv2PCgrg0u1-knsl5W607m640im2LpiYU=.webp
+│   │   │   ├── fZmAs8Z9ajw0HHk6Rq1soYdPNHrGCqb0SGrpwhMR3eI=/
+│   │   │   │   └── 31536000.1770848167984.rM6AQhUKvUqjLwqhXzGRhUA-4bz08N5JRCyNn+oHyjE=.webp
+│   │   │   ├── GD3Ki5kbNi0d-cmM7VC4BNsUjbYrJEv5FyqeohRCOEQ=/
+│   │   │   │   └── 60.1746209113965.w16tqVP7+gQAtGVZITbEsB3Iw-nDvd6-oP6x3vf9Zac=.webp
+│   │   │   ├── gjxGMHHAicj+bz8WWAxV37066mNDsLpMV39-gRL3nuU=/
+│   │   │   │   └── 60.1746212011927.ll0Pidv2IDJQmkSQ9RG66LCsTmHNBcru1hDCk47d1lU=.webp
+│   │   │   ├── gnTZyqwgqUF7TAQJ7hoAq0YKZoyY2s9sQsJseFOoL5I=/
+│   │   │   │   └── 60.1746212012015.b8OWcREoJo1ZOjPKE2Jr0C-zkErAyZJyQqhlGmO+Oh4=.webp
+│   │   │   ├── HzFoTEOGzXvUoxklKfzbdf8MBfiJgbtGxhAmIlfFgL4=/
+│   │   │   │   └── 31536000.1770892074427.QrsFEJi+k6H4U8uJMNi9PJ1lsspNfKk9vO7NWlyN6y8=.webp
+│   │   │   ├── i8PcD99qLV9SvxiJ+DTvpuZVpb1orPSf1yvYe-AQv6E=/
+│   │   │   │   └── 60.1746212012038.MPG-tl8ZC2rnXNxzNSDMfm9QvAtcbKAMoNn8xxqDHkg=.webp
+│   │   │   ├── IbAE+4SJ+mno8dMt6nrrcofr7VycV8tVGVIaHyMCvbc=/
+│   │   │   │   └── 31536000.1770848168846.eXMapcQkeNMGoeyD+qO-hj-6scTA2I42Qd1O3qv+edA=.webp
+│   │   │   ├── IujXjO+fU4WxA8ckSatgffXbz4ikXR7OaLI6SYwHC40=/
+│   │   │   │   └── 60.1746212012153.VJo29C2WwLC8pBdnt0ZspudeAGqU8bnv2sYTddw9YUU=.webp
+│   │   │   ├── JaJr9O3H816qC2yBWjLcqt9yBiLZ+28mgXUrvSxGK8c=/
+│   │   │   │   └── 60.1746212012143.WdNuRwG7RYKpixxPLVlN9aB5ha2DsRHvG0pQqLqyplE=.webp
+│   │   │   ├── KuKSWpSMVrZMtP56Z0B-r6VTq+GKys5-ywYy-50Wp0k=/
+│   │   │   │   └── 60.1744707845935.o00RYVVCcNC-vV7dpiQ1dBvf8N8LVUB7-xZX1wmvv+8=.webp
+│   │   │   ├── lhh1JUtqQzu4aQOErxfk9qNJXEJ3ZFEzcCthh8TDIiY=/
+│   │   │   │   └── 60.1746209302564.WlQ9ghQlNjzroQrzAt7YELGwmHNS5+QRuUQvf7QY5GI=.webp
+│   │   │   ├── LjiWbdt61QVK3ZelF1NeJ-VqydT29oA584u10Oe5WCU=/
+│   │   │   │   └── 31536000.1770848168676.OwVHUgCbKwuZV+LcSndaS9kF6JW6dJPkkTz3nt8AC9w=.webp
+│   │   │   ├── LnuixlSo-m--aZRPrjshEUiCjXA-fEs22-603-qo1KU=/
+│   │   │   │   └── 31536000.1770848169726.NUfx3vLu13MZ9IYqhe7avc9jyoUc3tj1oFRHK5hRotA=.webp
+│   │   │   ├── lwpgU6ciYL9itHbeFXVLSUtJQOLGn48KD-czzo7SxrE=/
+│   │   │   │   └── 60.1746209114109.n6jcnCTkQjup9KRjwU3mKb1qRO1vTEtvrgc7QSj34AI=.webp
+│   │   │   ├── m+QrKgmQXRMB55GfLW8idMP1gCbl3T3riupmvjJAlCw=/
+│   │   │   │   └── 60.1746209114119.RSc0WDjYFSsd1stG4s4pr0aS-PMHbRKSOcQ2HXPEfho=.webp
+│   │   │   ├── mMpUfjGyXrkdO6gGPhJlS1E-bPs0C8uRGNwGhGVy7IE=/
+│   │   │   │   └── 31536000.1770848168551.kXeebiDqNHIVlWTEBBLx-ERrmnPEPZu5yv9XzvuQ2UM=.webp
+│   │   │   ├── Na4Y05qfU8vF5UnP-p-YBp+0gCcgUcWyqrjLvZsST-E=/
+│   │   │   │   └── 60.1746212012067.SiQuqri5Ado7F5RcVKL5LgkTA2AegEU2DB4KUu7P76Y=.webp
+│   │   │   ├── nvGx2ef795E-xZTRblpFQ1EOwsZi5ReBYF2PCQv-gGw=/
+│   │   │   │   └── 60.1746209113818.KxJHSxog9nzxW1Hq9FjUgXXW2GMSt-3pMrDHMJr4AEY=.webp
+│   │   │   ├── OiQsa6XSG3O96nFzrfor38tAa6QnVhoQp+vGk2Q0U1I=/
+│   │   │   │   └── 60.1746209113911.ORjN9r4Ck1q6tNOrGdlR4MEOORdHl0gkE7niNuy6UD8=.webp
+│   │   │   ├── oV8Hi4rirkrMw7UU16u-RtE+0h25berk7Jo-cBf5j8I=/
+│   │   │   │   └── 60.1746212012026.5ZHmVg1f7iqI9t6tNLNHRuoWmGnb34K-V+EfscAhawo=.webp
+│   │   │   ├── PE5deyhLL5UieNl90FdC27vFaPuZ62ELLWFccpmuF4I=/
+│   │   │   │   └── 60.1746209454340.tZe0ZzyXIIcmohUWp15cyZC0CgyxvjuPFTdJvOkmpto=.webp
+│   │   │   ├── PX7ttVGb3deXv0AuMZRbR+pK+3i77Pv7eN5fzKFr9Tw=/
+│   │   │   │   └── 60.1746212012148.P-rXmtNsDPR9qDAlt4GEbt8Vgk+A883p1FNPcZzKpPo=.webp
+│   │   │   ├── rCWqfhve2TtxhB1Wv856otT4zSUOgutzIDmAG5E1Qp4=/
+│   │   │   │   └── 60.1746212011901.EMr12QwSKk748y1asO9MXc3vS29e1oH1PR-iG2cFuxg=.webp
+│   │   │   ├── rdeOacIymDuSQ7uFVmPEk90q0NdF7NRTCTR8PLGXsjA=/
+│   │   │   │   └── 60.1746209113947.NIlEOyhYVIu-Rn2QON7CUNBnpmCa2oe-HvBLuafZwqY=.webp
+│   │   │   ├── rDnLCqUajKW7ROUpiGGETfkgfWh7tENP8Ss4fkf4A-s=/
+│   │   │   │   └── 60.1746212012132.E3sFjmEESifOIRJjzaT+so4QNFE-1h59LDFWEfoKuuc=.webp
+│   │   │   ├── RLQgA5MKQSbxWuzQ8TELAeAUnXkez5FKIF-G9MyNdZ8=/
+│   │   │   │   └── 60.1746211976902.mgDp0+QB29YgmO2JWndy+FUtee4bvx23aHo+etsOoSg=.webp
+│   │   │   ├── RtoU2GleegKqPUgvcZDaQVQ1EP6q5B0sKEbD5kUJQrI=/
+│   │   │   │   └── 60.1746209113843.Gb4Ejpii5kB9jxIBUobj+DKWwWQz6Kd-U2vCKm-3dgs=.webp
+│   │   │   ├── RUQuVmxzIXOs8A2TEqD8A68T9kw3SQVxLaBEK5dBsiU=/
+│   │   │   │   └── 60.1746212012137.huIALMtoDkDS8moMJZf4NDR6nNwgh72dfN1eGIypSaw=.webp
+│   │   │   ├── tL74HuCILru1w9501W0L1x9JuZo3GRj0djjCzK2UXhw=/
+│   │   │   │   └── 60.1746209113788.Zi4mjiSxghXsmgUePAKG5FXnzNUBsYXPemuoBvsHJvo=.webp
+│   │   │   ├── TqEVEyq7gpHc25MDPT6MooNPGjmQaQ15R9MN47xC8gk=/
+│   │   │   │   └── 60.1746212011984.5AVvgiDNSDqO4wXNvYlTF4FD36ccBwZl1yLNm0XqJOM=.webp
+│   │   │   ├── u6zWs49on5xOr95K9SM5mrcwBkIHM9XtdlCTNVwHBoQ=/
+│   │   │   │   └── 60.1746209114064.WxEJHo50FTaIm9tQGcOFIAvW0jGQJHIN24RIFIUNbEc=.webp
+│   │   │   ├── uGl+8Lcp5mvL3-JENIZip1tA4o2vECnBkbNuMnMeSKQ=/
+│   │   │   │   └── 31536000.1770848168434.ospiVJzgUZrUA3+xpjW2Pv+gUZm8kmW41JytqOGkXpM=.webp
+│   │   │   ├── uvGzkGvTzLZ+fE-jbx6EkWj5gV2YsYHg8ptsBcMgtsU=/
+│   │   │   │   └── 60.1746212012086.Q60+p+u3pA2ullm6Bb37kTeEfglWCyQcir-iVdTqmf0=.webp
+│   │   │   ├── v+nJTFTeuvWnOJuaopzl6VTlOfLW94-dhpKv+WZNguc=/
+│   │   │   │   └── 60.1746209114131.tdRdiYyOkseH+HB5TbKsR84F-EU9JadG4gAkfFM3Kfw=.webp
+│   │   │   ├── VRIIWCIBhohtt01j9dsKAmwmh-8v1UJ+bna9dEomWuM=/
+│   │   │   │   └── 60.1746212011991.6gqGzdhGJQFFAjezzSz3gAUjiMY7rL0Ttko2Lu0tC3w=.webp
+│   │   │   ├── WGDRXv2Qq9TQ6AlqDpM0PJqtX1PocNLvG76Mq5ZGjtE=/
+│   │   │   │   └── 60.1746209113776.FwSSYuIFWjd17jV9tErGEN6308O3AlCEHdnU7uaC4Kg=.webp
+│   │   │   ├── WOQwZKc0YHgl3kKuQ821hjGAcpdw1zGtEOYvCqYWbPA=/
+│   │   │   │   └── 60.1746209113751.VOj83BtOKGWs2cFapS1hxNBhPV7160GbLYsxSXP5+vI=.webp
+│   │   │   ├── X+YcH3hU9-zkDo8e9KarbV0eo+ngznfgvQJjZKoyNss=/
+│   │   │   │   └── 60.1746212012056.FbBv+Tefx++6V36VnLnBOZAmjb+FBcWKzRxTNuZuKtU=.webp
+│   │   │   ├── xruiljeg53ejp0ZqV8+4qzyw5+A3pIOJgRf7hKAGg50=/
+│   │   │   │   └── 60.1746209114101.u8WpK3q+EtbL8jUS2A93zW6d0Hwm4o5NPdye-DywqkQ=.webp
+│   │   │   ├── xxTaVFhVaBUfdJgLvdI-sFXLgG-REHmKBhGSc94mUuU=/
+│   │   │   │   └── 60.1746209113928.FA3EmjujHI-7mSJVfWsUTlLOt2f4JUXwAnTRhuPjm5M=.webp
+│   │   │   ├── yc0yTDcQJDXvklQg89EKZnoM86-yU49Ka03vh9uBTG8=/
+│   │   │   │   └── 60.1746209113830.eWWGsCfIDtouUIYHrAChA59McSkAdosYp0ncVW8qS90=.webp
+│   │   │   ├── yfw0zV0ZpFjG4Z25DLi-J5EVJVRawWFtmrA3vvrhQUk=/
+│   │   │   │   └── 60.1746209302576.hAqyH9dU3z3D7i9y5Os1+B3AoR5e02knfghGuATWkUI=.webp
+│   │   │   ├── YJF0NEthh7-IpzNDyP+P02-HvKr2AfvZHCWPf5LpET0=/
+│   │   │   │   └── 60.1745831411718.HWQJvJaDZwHb-nrCbEElYEtwKivceLwG5BEoRFMHu2k=.webp
+│   │   │   ├── yUDBvo2bk5bgK4edcaBErI5tKmH1TkkNCBgnANwmlZg=/
+│   │   │   │   └── 60.1746209302590.GZ8DPdlHrgVYod6PVBu5+eik2LqWnJVXHbaocfbrnsQ=.webp
+│   │   │   ├── YXrwLC3DBXsOY4xcO3ucPEEzJTqAF4PRJ6cRC1alyOg=/
+│   │   │   │   └── 60.1746212012105.FJyVSvXmJR1BSn3HetYG51SQpvQNHF4P-kwZ66sEwCY=.webp
+│   │   │   ├── yZ6HdmEz+xjMZDNoCTp1vHlnQDFbaGMjGJFKghGX64U=/
+│   │   │   │   └── 60.1746209113899.J8iYneOnLV+pxU6aDU07lFiCgsWoPHscAHWSNLrnPik=.webp
+│   │   │   ├── Z49hU-1FjbDElpU4K1RLiebyfttsdOhPxk7bq+EIbnQ=/
+│   │   │   │   └── 60.1746209302558.L7sLvGzJBNEpJokQW-z8ENji4YRNxxH+MTX0eJiwhMw=.webp
+│   │   │   └── zJBDEqNNK2HsQnH-7hVqVsf57rRCvjcYvGQ-1UtsCw4=/
+│   │   │       └── 31536000.1770848168243.rvRUvy1KvsT5A3SVhU5A6XPDHk-E77itco98w9IhBoY=.webp
+│   │   ├── swc/
+│   │   │   └── plugins/
+│   │   │       └── v7_macos_x86_64_0.106.15/
+│   │   └── webpack/
+│   │       ├── client-development/
+│   │       │   ├── 0.pack.gz
+│   │       │   ├── 1.pack.gz
+│   │       │   ├── 10.pack.gz
+│   │       │   ├── 11.pack.gz
+│   │       │   ├── 12.pack.gz
+│   │       │   ├── 13.pack.gz
+│   │       │   ├── 14.pack.gz
+│   │       │   ├── 15.pack.gz
+│   │       │   ├── 16.pack.gz
+│   │       │   ├── 17.pack.gz
+│   │       │   ├── 2.pack.gz
+│   │       │   ├── 3.pack.gz
+│   │       │   ├── 4.pack.gz
+│   │       │   ├── 5.pack.gz
+│   │       │   ├── 6.pack.gz
+│   │       │   ├── 7.pack.gz
+│   │       │   ├── 8.pack.gz
+│   │       │   ├── 9.pack.gz
+│   │       │   ├── index.pack.gz
+│   │       │   └── index.pack.gz.old
+│   │       ├── client-development-fallback/
+│   │       │   ├── 0.pack.gz
+│   │       │   ├── index.pack.gz
+│   │       │   └── index.pack.gz.old
+│   │       └── server-development/
+│   │           ├── 0.pack.gz
+│   │           ├── 1.pack.gz
+│   │           ├── 10.pack.gz
+│   │           ├── 11.pack.gz
+│   │           ├── 12.pack.gz
+│   │           ├── 13.pack.gz
+│   │           ├── 14.pack.gz
+│   │           ├── 2.pack.gz
+│   │           ├── 3.pack.gz
+│   │           ├── 4.pack.gz
+│   │           ├── 5.pack.gz
+│   │           ├── 6.pack.gz
+│   │           ├── 7.pack.gz
+│   │           ├── 8.pack.gz
+│   │           ├── 9.pack.gz
+│   │           ├── index.pack.gz
+│   │           └── index.pack.gz.old
+│   ├── server/
+│   │   ├── app/
+│   │   │   ├── (dashboard)/
+│   │   │   │   └── list/
+│   │   │   │       ├── lessons/
+│   │   │   │       │   ├── page.js
+│   │   │   │       │   └── page_client-reference-manifest.js
+│   │   │   │       ├── students/
+│   │   │   │       │   ├── page.js
+│   │   │   │       │   └── page_client-reference-manifest.js
+│   │   │   │       ├── subjects/
+│   │   │   │       │   ├── page.js
+│   │   │   │       │   └── page_client-reference-manifest.js
+│   │   │   │       └── teachers/
+│   │   │   │           └── [id]/
+│   │   │   │               ├── page.js
+│   │   │   │               └── page_client-reference-manifest.js
+│   │   │   ├── _not-found/
+│   │   │   │   ├── page.js
+│   │   │   │   └── page_client-reference-manifest.js
+│   │   │   ├── favicon.ico/
+│   │   │   │   └── route.js
+│   │   │   ├── sign-in/
+│   │   │   │   ├── page.js
+│   │   │   │   └── page_client-reference-manifest.js
+│   │   │   ├── page.js
+│   │   │   └── page_client-reference-manifest.js
+│   │   ├── vendor-chunks/
+│   │   │   ├── @babel.js
+│   │   │   ├── @hookform.js
+│   │   │   ├── @popperjs.js
+│   │   │   ├── @restart.js
+│   │   │   ├── @swc.js
+│   │   │   ├── asynckit.js
+│   │   │   ├── axios.js
+│   │   │   ├── call-bind-apply-helpers.js
+│   │   │   ├── clsx.js
+│   │   │   ├── combined-stream.js
+│   │   │   ├── d3-array.js
+│   │   │   ├── d3-color.js
+│   │   │   ├── d3-format.js
+│   │   │   ├── d3-interpolate.js
+│   │   │   ├── d3-path.js
+│   │   │   ├── d3-scale.js
+│   │   │   ├── d3-shape.js
+│   │   │   ├── d3-time-format.js
+│   │   │   ├── d3-time.js
+│   │   │   ├── date-arithmetic.js
+│   │   │   ├── dayjs.js
+│   │   │   ├── debug.js
+│   │   │   ├── decimal.js-light.js
+│   │   │   ├── delayed-stream.js
+│   │   │   ├── dom-helpers.js
+│   │   │   ├── dunder-proto.js
+│   │   │   ├── es-define-property.js
+│   │   │   ├── es-errors.js
+│   │   │   ├── es-object-atoms.js
+│   │   │   ├── es-set-tostringtag.js
+│   │   │   ├── eventemitter3.js
+│   │   │   ├── fast-equals.js
+│   │   │   ├── follow-redirects.js
+│   │   │   ├── form-data.js
+│   │   │   ├── function-bind.js
+│   │   │   ├── get-intrinsic.js
+│   │   │   ├── get-proto.js
+│   │   │   ├── gopd.js
+│   │   │   ├── has-flag.js
+│   │   │   ├── has-symbols.js
+│   │   │   ├── has-tostringtag.js
+│   │   │   ├── hasown.js
+│   │   │   ├── internmap.js
+│   │   │   ├── invariant.js
+│   │   │   ├── lodash.js
+│   │   │   ├── lucide-react.js
+│   │   │   ├── math-intrinsics.js
+│   │   │   ├── memoize-one.js
+│   │   │   ├── mime-db.js
+│   │   │   ├── mime-types.js
+│   │   │   ├── moment.js
+│   │   │   ├── ms.js
+│   │   │   ├── next.js
+│   │   │   ├── object-assign.js
+│   │   │   ├── prop-types.js
+│   │   │   ├── proxy-from-env.js
+│   │   │   ├── react-big-calendar.js
+│   │   │   ├── react-hook-form.js
+│   │   │   ├── react-is.js
+│   │   │   ├── react-lifecycles-compat.js
+│   │   │   ├── react-overlays.js
+│   │   │   ├── react-smooth.js
+│   │   │   ├── react-transition-group.js
+│   │   │   ├── recharts-scale.js
+│   │   │   ├── recharts.js
+│   │   │   ├── supports-color.js
+│   │   │   ├── tiny-invariant.js
+│   │   │   ├── uncontrollable.js
+│   │   │   ├── victory-vendor.js
+│   │   │   ├── warning.js
+│   │   │   └── zod.js
+│   │   ├── _ssr_src_components_forms_StudentForm_tsx.js
+│   │   ├── _ssr_src_components_forms_TeacherForm_tsx.js
+│   │   ├── app-paths-manifest.json
+│   │   ├── interception-route-rewrite-manifest.js
+│   │   ├── middleware-build-manifest.js
+│   │   ├── middleware-manifest.json
+│   │   ├── middleware-react-loadable-manifest.js
+│   │   ├── next-font-manifest.js
+│   │   ├── next-font-manifest.json
+│   │   ├── pages-manifest.json
+│   │   ├── server-reference-manifest.js
+│   │   ├── server-reference-manifest.json
+│   │   └── webpack-runtime.js
+│   ├── static/
+│   │   ├── chunks/
+│   │   │   ├── app/
+│   │   │   │   ├── (dashboard)/
+│   │   │   │   │   ├── list/
+│   │   │   │   │   │   ├── lessons/
+│   │   │   │   │   │   │   └── page.js
+│   │   │   │   │   │   ├── students/
+│   │   │   │   │   │   │   └── page.js
+│   │   │   │   │   │   ├── subjects/
+│   │   │   │   │   │   │   └── page.js
+│   │   │   │   │   │   └── teachers/
+│   │   │   │   │   │       └── [id]/
+│   │   │   │   │   │           └── page.js
+│   │   │   │   │   └── layout.js
+│   │   │   │   ├── _not-found/
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── sign-in/
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── layout.js
+│   │   │   │   └── page.js
+│   │   │   ├── _app-pages-browser_src_components_forms_StudentForm_tsx.js
+│   │   │   ├── _app-pages-browser_src_components_forms_TeacherForm_tsx.js
+│   │   │   ├── app-pages-internals.js
+│   │   │   ├── main-app.js
+│   │   │   ├── polyfills.js
+│   │   │   └── webpack.js
+│   │   ├── css/
+│   │   │   └── app/
+│   │   │       ├── (dashboard)/
+│   │   │       │   └── list/
+│   │   │       │       └── teachers/
+│   │   │       │           └── [id]/
+│   │   │       │               └── page.css
+│   │   │       └── layout.css
+│   │   ├── development/
+│   │   │   ├── _buildManifest.js
+│   │   │   └── _ssgManifest.js
+│   │   ├── media/
+│   │   │   ├── 26a46d62cd723877-s.woff2
+│   │   │   ├── 55c55f0601d81cf3-s.woff2
+│   │   │   ├── 581909926a08bbc8-s.woff2
+│   │   │   ├── 6d93bde91c0c2823-s.woff2
+│   │   │   ├── 97e0cb1ae144a2a9-s.woff2
+│   │   │   ├── a34f9d1faa5f3315-s.p.woff2
+│   │   │   └── df0a9ae256c0569c-s.woff2
+│   │   └── webpack/
+│   │       ├── app/
+│   │       │   └── layout.1bad39cd17866988.hot-update.js
+│   │       ├── 03c8b8dda1d08fdb.webpack.hot-update.json
+│   │       ├── 1bad39cd17866988.webpack.hot-update.json
+│   │       ├── 37a0099154075be5.webpack.hot-update.json
+│   │       ├── 633457081244afec._.hot-update.json
+│   │       ├── 71d5f908c953d213.webpack.hot-update.json
+│   │       ├── 7d9094a56e752b4e.webpack.hot-update.json
+│   │       ├── b971500d31963d78.webpack.hot-update.json
+│   │       ├── cd1e18fc42337a45.webpack.hot-update.json
+│   │       ├── e0c95406c92315a6.webpack.hot-update.json
+│   │       ├── webpack.03c8b8dda1d08fdb.hot-update.js
+│   │       ├── webpack.1bad39cd17866988.hot-update.js
+│   │       ├── webpack.37a0099154075be5.hot-update.js
+│   │       ├── webpack.71d5f908c953d213.hot-update.js
+│   │       ├── webpack.7d9094a56e752b4e.hot-update.js
+│   │       ├── webpack.b971500d31963d78.hot-update.js
+│   │       ├── webpack.cd1e18fc42337a45.hot-update.js
+│   │       └── webpack.e0c95406c92315a6.hot-update.js
+│   ├── types/
+│   │   ├── app/
+│   │   │   ├── (dashboard)/
+│   │   │   │   ├── list/
+│   │   │   │   │   ├── lessons/
+│   │   │   │   │   │   └── page.ts
+│   │   │   │   │   ├── students/
+│   │   │   │   │   │   └── page.ts
+│   │   │   │   │   ├── subjects/
+│   │   │   │   │   │   └── page.ts
+│   │   │   │   │   └── teachers/
+│   │   │   │   │       └── [id]/
+│   │   │   │   │           └── page.ts
+│   │   │   │   └── layout.ts
+│   │   │   ├── sign-in/
+│   │   │   │   └── page.ts
+│   │   │   ├── layout.ts
+│   │   │   └── page.ts
+│   │   └── package.json
+│   ├── app-build-manifest.json
+│   ├── build-manifest.json
+│   ├── package.json
+│   ├── react-loadable-manifest.json
+│   └── trace
+├── output/
+│   └── code_dump.txt
+├── public/
+│   ├── .DS_Store
+│   ├── announcement.png
+│   ├── assignment.png
+│   ├── attendance.png
+│   ├── avatar.png
+│   ├── blood.png
+│   ├── calendar.png
+│   ├── class.png
+│   ├── close.png
+│   ├── create.png
+│   ├── date.png
+│   ├── delete.png
+│   ├── exam.png
+│   ├── Eye Icon.png
+│   ├── filter.png
+│   ├── finance.png
+│   ├── home.png
+│   ├── lesson.png
+│   ├── logo.png
+│   ├── logout.png
+│   ├── mail.png
+│   ├── maleFemale.png
+│   ├── message.png
+│   ├── more.png
+│   ├── moreDark.png
+│   ├── parent.png
+│   ├── phone.png
+│   ├── profile.png
+│   ├── result.png
+│   ├── search.png
+│   ├── setting.png
+│   ├── singleAttendance.png
+│   ├── singleBranch.png
+│   ├── singleClass.png
+│   ├── singleLesson.png
+│   ├── sort.png
+│   ├── student.png
+│   ├── subject.png
+│   ├── teacher.png
+│   ├── Trash Icon.png
+│   ├── update.png
+│   ├── upload.png
+│   └── view.png
+├── src/
+│   ├── app/
+│   │   ├── (dashboard)/
+│   │   │   ├── admin/
+│   │   │   │   └── page.tsx
+│   │   │   ├── list/
+│   │   │   │   ├── announcements/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── assignments/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── classes/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── events/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── exams/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── lessons/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── parents/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── results/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── students/
+│   │   │   │   │   ├── [id]/
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── subjects/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── teachers/
+│   │   │   │       ├── [id]/
+│   │   │   │       │   └── page.tsx
+│   │   │   │       └── page.tsx
+│   │   │   ├── parent/
+│   │   │   │   └── page.tsx
+│   │   │   ├── student/
+│   │   │   │   └── page.tsx
+│   │   │   ├── teacher/
+│   │   │   │   └── page.tsx
+│   │   │   └── layout.tsx
+│   │   ├── sign-in/
+│   │   │   └── page.tsx
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── auth/
+│   │   │   ├── AuthFooter.tsx
+│   │   │   ├── AuthHeader.tsx
+│   │   │   ├── AuthToggle.tsx
+│   │   │   ├── InputField.tsx
+│   │   │   ├── LoginForm.tsx
+│   │   │   ├── RegisterForm.tsx
+│   │   │   └── SocialLogin.tsx
+│   │   ├── forms/
+│   │   │   ├── StudentForm.tsx
+│   │   │   └── TeacherForm.tsx
+│   │   ├── ui/
+│   │   │   └── Button.tsx
+│   │   ├── Announcements.tsx
+│   │   ├── AttendanceChart.tsx
+│   │   ├── BigCalender.tsx
+│   │   ├── CountChart.tsx
+│   │   ├── EventCalendar.tsx
+│   │   ├── FinanceChart.tsx
+│   │   ├── FormModal.tsx
+│   │   ├── InputField.tsx
+│   │   ├── Menu.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── Pagination.tsx
+│   │   ├── Performance.tsx
+│   │   ├── ProtectedRoute.tsx
+│   │   ├── Table.tsx
+│   │   ├── TableSearch.tsx
+│   │   └── UserCard.tsx
+│   ├── context/
+│   │   └── authContext.tsx
+│   └── lib/
+│       ├── axios.ts
+│       └── data.ts
+├── .DS_Store
+├── .env
+├── .eslintrc.json
+├── .gitignore
+├── dir.py
+├── next-env.d.ts
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── README.md
+├── tailwind.config.ts
+└── tsconfig.json
