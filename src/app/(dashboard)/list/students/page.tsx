@@ -62,16 +62,17 @@ const StudentListPage = () => {
     try {
       const response = await api.get('/students');
 
-      // Transform backend data to match frontend structure
-      const transformedStudents = response.data.map((backendStudent: any) => ({
-        id: backendStudent.id,
-        studentId: backendStudent.id.toString(),
-        name: `${backendStudent.fullName} ${backendStudent.surname}`,
-        photo: backendStudent.img,
-        phone: backendStudent.phone,
-        grade: backendStudent.gradeId,
-        class: `Class ${backendStudent.classId}`,
-        address: backendStudent.address,
+      // Transform new backend data structure to match frontend requirements
+      const transformedStudents = response.data.map((student: any) => ({
+        id: student.id,
+        studentId: student.id || 'N/A',
+        name: `${student.fullName || ''} ${student.surname || ''}`.trim(),
+        email: student.email,
+        photo: student.img || './avatar.png',
+        phone: student.phone,
+        grade: student.schoolClass?.grade?.level || 0,
+        class: student.schoolClass?.name || 'Unassigned',
+        address: student.address || 'No address',
       }));
 
       setStudents(transformedStudents);
@@ -93,11 +94,15 @@ const StudentListPage = () => {
       >
         <td className="flex items-center gap-4 p-4">
           <Image
-              src={item.photo || "./avatar.png"}
+              src={item.photo}
               alt="Student photo"
               width={40}
               height={40}
               className="md:hidden xl:block w-10 h-10 rounded-full object-cover"
+              onError={(e) => {
+                // Fallback to default avatar if image fails to load
+                e.currentTarget.src = './avatar.png';
+              }}
           />
           <div className="flex flex-col">
             <h3 className="font-semibold">{item.name}</h3>
@@ -106,8 +111,8 @@ const StudentListPage = () => {
         </td>
         <td className="hidden md:table-cell">{item.studentId}</td>
         <td className="hidden md:table-cell">{item.grade}</td>
-        <td className="hidden md:table-cell">{item.phone}</td>
-        <td className="hidden md:table-cell">{item.address}</td>
+        <td className="hidden lg:table-cell">{item.phone || 'N/A'}</td>
+        <td className="hidden lg:table-cell">{item.address}</td>
         <td>
           <div className="flex items-center gap-2">
             <Link href={`/list/students/${item.id}`}>
@@ -123,8 +128,8 @@ const StudentListPage = () => {
       </tr>
   );
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+  if (loading) return <div className="p-4 text-center">Loading students...</div>;
+  if (error) return <div className="p-4 text-red-500">Error: {error}</div>;
 
   return (
       <div className="bg-white p-4 rounded-md flex-1 m-4 mt-0">

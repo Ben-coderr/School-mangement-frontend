@@ -9,19 +9,40 @@ import Image from "next/image";
 import Link from "next/link";
 import api from '@/lib/axios';
 
+type Grade = {
+  id: number;
+  level: number;
+};
+
+type SchoolClass = {
+  id: number;
+  name: string;
+  grade: Grade;
+};
+
+type Parent = {
+  id: number;
+  fullName: string;
+  phone: string;
+  email: string;
+  address: string;
+};
+
 type Student = {
   id: number;
   fullName: string;
   surname: string;
-  email?: string;
-  img: string;
-  phone?: string;
-  gradeId: number;
-  classId: number;
+  email: string;
+  phone: string;
+  schoolClass: SchoolClass | null;
+  matricule: string;
+  placeOfBirth: string;
+  parent: Parent | null;
   address: string;
-  bloodType?: string;
-  birthday?: string;
-  // Add other fields as needed based on your backend response
+  img: string;
+  bloodType: string;
+  sex: string;
+  birthday: string;
 };
 
 const SingleStudentPage = () => {
@@ -68,6 +89,9 @@ const SingleStudentPage = () => {
                     width={144}
                     height={144}
                     className="w-36 h-36 rounded-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.src = '/avatar.png';
+                    }}
                 />
               </div>
               <div className="w-2/3 flex flex-col justify-between gap-4">
@@ -75,7 +99,9 @@ const SingleStudentPage = () => {
                   {student.fullName} {student.surname}
                 </h1>
                 <p className="text-sm text-gray-500">
-                  Student in Grade {student.gradeId}, Class {student.classId}
+                  {student.schoolClass
+                      ? `Student in Grade ${student.schoolClass.grade.level}, Class ${student.schoolClass.name}`
+                      : 'Unassigned to class'}
                 </p>
                 <div className="flex items-center justify-between gap-2 flex-wrap text-xs font-medium">
                   <div className="w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
@@ -84,7 +110,11 @@ const SingleStudentPage = () => {
                   </div>
                   <div className="w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
                     <Image src="/date.png" alt="" width={14} height={14} />
-                    <span>{student.birthday ? new Date(student.birthday).toLocaleDateString() : 'N/A'}</span>
+                    <span>
+                      {student.birthday
+                          ? new Date(student.birthday).toLocaleDateString()
+                          : 'N/A'}
+                    </span>
                   </div>
                   <div className="w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
                     <Image src="/mail.png" alt="" width={14} height={14} />
@@ -94,6 +124,12 @@ const SingleStudentPage = () => {
                     <Image src="/phone.png" alt="" width={14} height={14} />
                     <span>{student.phone || 'N/A'}</span>
                   </div>
+                  {student.parent && (
+                      <div className="w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
+                        <Image src="/parent.png" alt="" width={14} height={14} />
+                        <span>{student.parent.fullName || 'N/A'}</span>
+                      </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -123,7 +159,9 @@ const SingleStudentPage = () => {
                     className="w-6 h-6"
                 />
                 <div className="">
-                  <h1 className="text-xl font-semibold">{student.gradeId}th</h1>
+                  <h1 className="text-xl font-semibold">
+                    {student.schoolClass?.grade.level || 'N/A'}
+                  </h1>
                   <span className="text-sm text-gray-400">Grade</span>
                 </div>
               </div>
@@ -151,7 +189,9 @@ const SingleStudentPage = () => {
                     className="w-6 h-6"
                 />
                 <div className="">
-                  <h1 className="text-xl font-semibold">{student.classId}A</h1>
+                  <h1 className="text-xl font-semibold">
+                    {student.schoolClass?.name || 'N/A'}
+                  </h1>
                   <span className="text-sm text-gray-400">Class</span>
                 </div>
               </div>

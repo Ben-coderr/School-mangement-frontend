@@ -1,4 +1,389 @@
 next-dashboard-ui-completed/
+├── .idea/
+│   ├── inspectionProfiles/
+│   │   └── Project_Default.xml
+│   ├── shelf/
+│   │   ├── Uncommitted_changes_before_Update_at_27_5_2025,_1_47 PM_[Changes]/
+│   │   │   └── shelved.patch
+│   │   └── Uncommitted_changes_before_Update_at_27_5_2025__1_47PM__Changes_.xml
+│   ├── .gitignore
+│   ├── git_toolbox_blame.xml
+│   ├── git_toolbox_prj.xml
+│   ├── modules.xml
+│   ├── next-dashboard-ui-completed.iml
+│   ├── vcs.xml
+│   └── workspace.xml
+├── .next/
+│   ├── cache/
+│   │   ├── images/
+│   │   │   ├── +wdIS48iya4sYUXxwF96Z2uvMumKjZr9CobNU1QT1KM=/
+│   │   │   │   └── 60.1748546983356.Y8GBi6H1ya6osHfkg14HNh0fmroZbAaR5X6oxoy1GaY=.webp
+│   │   │   ├── +Y4S-i4-iBW2gt7AHX7FwuaY6-e5UhdGFq7KI4IUDAw=/
+│   │   │   │   └── 60.1748547888475.ujTpzgIF3EjZWK5HWDatmO+vOl0leJVBfs1FU3de0Ss=.webp
+│   │   │   ├── -0B3kI+Q6RCwq6kvDEHq5qb0wYFKueA13tpGXUSGmyw=/
+│   │   │   │   └── 60.1748546625577.FJz1eDYVZEZVbVwaMSYFETa5hBw+yOW81zDvLlHPhZA=.webp
+│   │   │   ├── 0qgS37AM4hrWoFh4viSDbLr1ukjZLRFNv3gbPl1qqc8=/
+│   │   │   │   └── 60.1748546625464.6wX2Zb88KXrvkVgFP41wuRK4bmZRmBFtYgK52q-igyA=.webp
+│   │   │   ├── 2t2AI8yfao0nmTD-Gc17TbQWo3jefT5nE5HyZPjAiI0=/
+│   │   │   │   └── 60.1748547060693.ujTpzgIF3EjZWK5HWDatmO+vOl0leJVBfs1FU3de0Ss=.webp
+│   │   │   ├── 4+eHyVJCCFhlKnrLak0PXRTtW7AHueAcfOQwKRxlPAA=/
+│   │   │   │   └── 60.1748546985084.paYzuTopUBskpAfq3U4hkUYZnmjjht2q-DGXKLWGhVI=.webp
+│   │   │   ├── 4cy17-4uJWh7sUnRR6UystH032ihYGbeSbVBkm6eWYo=/
+│   │   │   │   └── 60.1748547014321.KCBKaUb1M8UA3AiHqKuwVz0gAvX7C92NTCPuXThu0n4=.webp
+│   │   │   ├── 4qFfPuqgNMNs4ixO8ElXzz7naVexfVTi5sg6pgW+GcY=/
+│   │   │   │   └── 60.1748546985156.uGMnXRzImMNdNPOylSppXhoItuHjvJ4-5-6ekNH-X6k=.webp
+│   │   │   ├── 4UlYiYgJMOtl032Mj-5fqUjPGuPxVIO4z9QMUE6W1Uk=/
+│   │   │   │   └── 60.1748549205494.09AH-33FAB-x4s2IdveOIrtoz2LJVBfWc3T6hDLfoi4=.webp
+│   │   │   ├── 5D3LT6HCT5OHxCc1lzUoUyr0Jzx9OjFXlzT-Cu1Hv-I=/
+│   │   │   │   └── 60.1748546625586.FnbLXYIcv76yBLNBpZLPUNXaoj3WRFvlfOY58Xc301M=.webp
+│   │   │   ├── 6gT8b8+cKEFAoAjPOH6lr7R3OeEFK8qSWgWILOAgrOM=/
+│   │   │   │   └── 60.1748549205367.VTUAwvC03i+0kBAxMvb0Zt-CCazaSepfdaMqxkc+s3M=.webp
+│   │   │   ├── 6L+BOU1f73fI-6T8F4vLgMnCMz36cyYywsYTP+s2XeQ=/
+│   │   │   │   └── 60.1748546625551.Vel7iebbUoAx0S+fa5zFP538fvolH1o7Zy4yO53cnRM=.webp
+│   │   │   ├── 6shMDjUnhHG66Or39JjWdTfs1Pz5xxPsJKTpDNyyHtU=/
+│   │   │   │   └── 60.1748546625521.SqcPB8MdVSVHymLsg1NIrvc2M1Q4bGbDREFZkWuzMbM=.webp
+│   │   │   ├── 7rm2FImXa8YV6hnIg6Mn9Gex+aVUxZQKkPaMMfXhXns=/
+│   │   │   │   └── 60.1748546985149.fsOaicyueZUiA5bo9lm6iV2sHmhS8s5RsngNrfOsWE0=.webp
+│   │   │   ├── 7sXdDT0lSfDQbR5R8dJzmlyxNH2YFXBtno9l8xpRMkw=/
+│   │   │   │   └── 2592000.1751059266033.P4x7NZlBmfhtYzfSUiefGFT3R7jbGN87xCilc3V3jJM=.webp
+│   │   │   ├── 8ClMu1jzZtib06w8SYAeyff+8Enym774Mba-E7V0Zkw=/
+│   │   │   │   └── 60.1748547014360.QYd-T1i34DKEDNRaTk8rrB3ycEbkjlJRJYH0vPeVmZE=.webp
+│   │   │   ├── 8fM9RLrxGcEKsw-ExegquhZed9ZOPf0J-gCC7zpPoMQ=/
+│   │   │   │   └── 60.1748549204976.9XoqNDyRCVDnHSoxlm0bSMpjp4iMy0SkGzs3bHF01Lc=.webp
+│   │   │   ├── 8Fw8zXFfUEXgckqowYgSd5z2c8m5zm8xKX6w7iO0cF0=/
+│   │   │   │   └── 60.1748547014395.rIGsUS6ZPCc8Vlc5ZfAc0jirVQKRJ7aLMZqdKB3+yjU=.webp
+│   │   │   ├── 8ZhlgNcDiWNLAz-m4JW7kq22UTJKD76z+3+Pvs5aYGY=/
+│   │   │   │   └── 31536000.1770848169486.lYgdUvIe7NTuLIYHf3TLMYhIrdJsUNZSeHIERGTVicw=.webp
+│   │   │   ├── 9wedYuBcuByqRiZEZ3h65ays2P2KFu+l00UQrlGWNUE=/
+│   │   │   │   └── 15552000.1764095021676.ubXRcA-Ja2qfglBH8FpjyZXWpxFrpIXi7--WLXVU+mc=.webp
+│   │   │   ├── 9WRm7hm9DuabRHlupudiqiFvQLlP-VuSr1vEwVcNiso=/
+│   │   │   │   └── 15552000.1764093585475.dG94sfTsiMQcI+VPGxwJIS1aGL5jnwuDmrhkzlK25Ho=.webp
+│   │   │   ├── A8F3jQpfvQVEmjxNbn-Eh0MO6kKQZ8HnMXtPTKLdlMU=/
+│   │   │   │   └── 60.1748549205463.RlBOVLyCe+wDFxAAVv22fWnsv92W+y3jbpc5gTw6XP0=.webp
+│   │   │   ├── AK-ZuJq6A2XqSgHNly0clfZ6AfBuYCJ-ImITVCr9nGg=/
+│   │   │   │   └── 60.1748549205886.sFibYRnctX-karlo4vNrRaEeFMnQeSk5ulzrS179j6w=.webp
+│   │   │   ├── aM7StgA-Klvt2CpsA9STm86GOVk6b0QuVRg9eINAbv4=/
+│   │   │   │   └── 60.1748549205357.Fb4C40KPvhQlawLvtGlULmdnmB2u+EICVgTC60Gn6mY=.webp
+│   │   │   ├── AYxM44oUaMtakClfmiw5AWX93mJcG0ZguXOBwIMk7Hg=/
+│   │   │   │   └── 31536000.1770848167781.cgAOqFLfAWOiAULKrGXW0e1gG8MPJxa9ggPwtPLGeGo=.webp
+│   │   │   ├── az7sQnyv9Gz82kKLrjL7cPqInRUa0KPrQ0Q5YT0Ap8I=/
+│   │   │   │   └── 60.1748384686718.YUxoIsj19PpQG4sqDFMHG66yiprZn7m0EKCUF77QMVU=.webp
+│   │   │   ├── BjRlfzI9CKzL1sdvAlJUz1DVBaFrgyYJ+PJ9-QrjIP8=/
+│   │   │   │   └── 31536000.1780004938657.AK4e5sU9gsRTCB+T5rSZMxYBPielXcdfcOdDpAoiZv0=.webp
+│   │   │   ├── bO+II347HQDSORSAmCuN92rVaXWeaGsowwKmfpved9E=/
+│   │   │   │   └── 60.1748546983334.XblXN7+QoPC-11cy-9bK7dxkap7hPfflcVToLrINLeg=.webp
+│   │   │   ├── bvz2VeLiFGjfjQKAmR+NkdplW5KqXdGcH04moFIICwc=/
+│   │   │   │   └── 60.1748549205334.4KkgN-mqAry3k08lpGlo8stuDwLO7SfRzPub2DhgdHc=.webp
+│   │   │   ├── bZbqgN9UOuictSJksMfj6N8Z82A61c6-IumFZSXeHQk=/
+│   │   │   │   └── 60.1748549205234.vanx5pPImo+fsacuAPfBHY0H3se1N7rqOmlnO8+HPok=.webp
+│   │   │   ├── CdyVOzoRQA45kUu0nPHn6ypzQS0mDo6tpugAW1BlRBA=/
+│   │   │   │   └── 2592000.1751135022623.yJOhePdYlOXkgXqthpjq08LiXssmuPR6ZShvzuEGIWM=.webp
+│   │   │   ├── cV8NmpS8j13XturMhCQ5RSFWSDy4KRPExz2toC298oY=/
+│   │   │   │   └── 60.1748546983303.4o8HETlGQ9Ne0Cl-NmsN8rkKN4Qz1OGYAhQ1iEbIo8o=.webp
+│   │   │   ├── cYu73yYHD2ayW9JfEcOY1ey+zdN985v40oX45T8HTB0=/
+│   │   │   │   └── 60.1748546985163.BNs+1kgWKBd-niANRtVyeOe-wE4YzNqEDX4zZqdbo8c=.webp
+│   │   │   ├── D9pfJfoysWk1h+N15KALovGvdc1Hgi4K7K-dhp4MBTg=/
+│   │   │   │   └── 60.1748547014382.pHX2hkjs5Ktgc1ESX2fIs0nl9hDOvZBhwLWYoG9qFv8=.webp
+│   │   │   ├── EG9oHLcaPDIwCEIqsakE+6mUP-6IDmyxyCn37pfn99Y=/
+│   │   │   │   └── 60.1748546625425.ZHCh6xHHVxERn4TBaYcR2MhVto8lg-ZYTRcD2Cq0g54=.webp
+│   │   │   ├── EondPEyGnQ7cWjljBXka4UWpMvBk0-DIZo7hxnFaoR4=/
+│   │   │   │   └── 60.1748547014374.pg8noV5reZqwtr49AVc1cm4OomvzZ3csG-JsqCMUjJk=.webp
+│   │   │   ├── fumndPpQAq+Q6BEtaxWZg20GIqYhdx6LrKUYdqyZ76Y=/
+│   │   │   │   └── 31536000.1770848167659.crgrQc9hqMBv2PCgrg0u1-knsl5W607m640im2LpiYU=.webp
+│   │   │   ├── FygbANRSRhFds7KpalKFyeZYNTczkgNssgst86vlGcw=/
+│   │   │   │   └── 31536000.1780084426328.zyDHOGci6N3x3um72aCqX+dL2S6lh5SUHS2RTQBQ6jA=.webp
+│   │   │   ├── fZmAs8Z9ajw0HHk6Rq1soYdPNHrGCqb0SGrpwhMR3eI=/
+│   │   │   │   └── 31536000.1770848167984.rM6AQhUKvUqjLwqhXzGRhUA-4bz08N5JRCyNn+oHyjE=.webp
+│   │   │   ├── g66zqhmJiNAmpypu0W4qOd+sgUBcWFcw3R8SqAjukEE=/
+│   │   │   │   └── 60.1748546985091.xrdKWMjguxBOxVQR-h+mfAlVIzQQEGlMkBprcdqOwv8=.webp
+│   │   │   ├── GD3Ki5kbNi0d-cmM7VC4BNsUjbYrJEv5FyqeohRCOEQ=/
+│   │   │   │   └── 60.1748546983351.w16tqVP7+gQAtGVZITbEsB3Iw-nDvd6-oP6x3vf9Zac=.webp
+│   │   │   ├── Gdn82lhJMwVESaiEmfARm+XhqtLE+kPb6pFeg0s3GTU=/
+│   │   │   │   └── 60.1748546985172.7MU287Hx7jRoncvK2rzYDEtTIABr2sEm-ZlCy876EuI=.webp
+│   │   │   ├── gjxGMHHAicj+bz8WWAxV37066mNDsLpMV39-gRL3nuU=/
+│   │   │   │   └── 60.1748549204908.ll0Pidv2IDJQmkSQ9RG66LCsTmHNBcru1hDCk47d1lU=.webp
+│   │   │   ├── gnTZyqwgqUF7TAQJ7hoAq0YKZoyY2s9sQsJseFOoL5I=/
+│   │   │   │   └── 60.1748549205113.b8OWcREoJo1ZOjPKE2Jr0C-zkErAyZJyQqhlGmO+Oh4=.webp
+│   │   │   ├── gRFRNI6Bk632BXXXbFxdEwRDiOMYl26Yt849iJrpDnw=/
+│   │   │   │   └── 60.1748546985108.Z9bcUeW5JCIs2pdH+MSG+fqsC50CjPfxIVjXC3ZTGVc=.webp
+│   │   │   ├── HCuFxj4192jcDyxLKXZFflpW-jO96g9knoi-AoxnT+Y=/
+│   │   │   │   └── 2592000.1751138956997.SzmN6WzoP5UW3JiF2uHKwWn6ONF9QV25UvYFy8kd4ok=.webp
+│   │   │   ├── HzFoTEOGzXvUoxklKfzbdf8MBfiJgbtGxhAmIlfFgL4=/
+│   │   │   │   └── 31536000.1770892074427.QrsFEJi+k6H4U8uJMNi9PJ1lsspNfKk9vO7NWlyN6y8=.webp
+│   │   │   ├── i8PcD99qLV9SvxiJ+DTvpuZVpb1orPSf1yvYe-AQv6E=/
+│   │   │   │   └── 60.1748549205325.MPG-tl8ZC2rnXNxzNSDMfm9QvAtcbKAMoNn8xxqDHkg=.webp
+│   │   │   ├── IbAE+4SJ+mno8dMt6nrrcofr7VycV8tVGVIaHyMCvbc=/
+│   │   │   │   └── 31536000.1770848168846.eXMapcQkeNMGoeyD+qO-hj-6scTA2I42Qd1O3qv+edA=.webp
+│   │   │   ├── IujXjO+fU4WxA8ckSatgffXbz4ikXR7OaLI6SYwHC40=/
+│   │   │   │   └── 60.1748549205344.VJo29C2WwLC8pBdnt0ZspudeAGqU8bnv2sYTddw9YUU=.webp
+│   │   │   ├── j+MreTVfmRX9A9OA46vxWkIpmIsb+do-pH52GbDx8DE=/
+│   │   │   │   └── 31536000.1779920627367.qWrNAPQBkmUZa-luPBjLhZ40yh3qqr3OD+idix3G-F8=.webp
+│   │   │   ├── J2nEmjGvDLeHxTqw1+k54-cVSrY9-NGIvROZ35Gu-aY=/
+│   │   │   │   └── 2592000.1751061197949.hHRb+r+88WCWCbDB6L587WUHVNhu-uw92am4CoShY1Q=.webp
+│   │   │   ├── JaJr9O3H816qC2yBWjLcqt9yBiLZ+28mgXUrvSxGK8c=/
+│   │   │   │   └── 60.1748549205882.WdNuRwG7RYKpixxPLVlN9aB5ha2DsRHvG0pQqLqyplE=.webp
+│   │   │   ├── KKi17IunKdDhpbeUClB6wR-ihyNGHFdaGdjd0L17QHo=/
+│   │   │   │   └── 60.1748546985140.6vk1Ho+tHzAKj3FmZx8q8EJDL5I0LQf2xixFHzpHsd4=.webp
+│   │   │   ├── KuKSWpSMVrZMtP56Z0B-r6VTq+GKys5-ywYy-50Wp0k=/
+│   │   │   │   └── 60.1744707845935.o00RYVVCcNC-vV7dpiQ1dBvf8N8LVUB7-xZX1wmvv+8=.webp
+│   │   │   ├── lhh1JUtqQzu4aQOErxfk9qNJXEJ3ZFEzcCthh8TDIiY=/
+│   │   │   │   └── 60.1748547014275.WlQ9ghQlNjzroQrzAt7YELGwmHNS5+QRuUQvf7QY5GI=.webp
+│   │   │   ├── LjiWbdt61QVK3ZelF1NeJ-VqydT29oA584u10Oe5WCU=/
+│   │   │   │   └── 31536000.1770848168676.OwVHUgCbKwuZV+LcSndaS9kF6JW6dJPkkTz3nt8AC9w=.webp
+│   │   │   ├── LnuixlSo-m--aZRPrjshEUiCjXA-fEs22-603-qo1KU=/
+│   │   │   │   └── 31536000.1770848169726.NUfx3vLu13MZ9IYqhe7avc9jyoUc3tj1oFRHK5hRotA=.webp
+│   │   │   ├── lwpgU6ciYL9itHbeFXVLSUtJQOLGn48KD-czzo7SxrE=/
+│   │   │   │   └── 60.1748546625533.n6jcnCTkQjup9KRjwU3mKb1qRO1vTEtvrgc7QSj34AI=.webp
+│   │   │   ├── m+QrKgmQXRMB55GfLW8idMP1gCbl3T3riupmvjJAlCw=/
+│   │   │   │   └── 60.1748546625592.RSc0WDjYFSsd1stG4s4pr0aS-PMHbRKSOcQ2HXPEfho=.webp
+│   │   │   ├── mMpUfjGyXrkdO6gGPhJlS1E-bPs0C8uRGNwGhGVy7IE=/
+│   │   │   │   └── 31536000.1770848168551.kXeebiDqNHIVlWTEBBLx-ERrmnPEPZu5yv9XzvuQ2UM=.webp
+│   │   │   ├── Na4Y05qfU8vF5UnP-p-YBp+0gCcgUcWyqrjLvZsST-E=/
+│   │   │   │   └── 60.1748549205301.SiQuqri5Ado7F5RcVKL5LgkTA2AegEU2DB4KUu7P76Y=.webp
+│   │   │   ├── nvGx2ef795E-xZTRblpFQ1EOwsZi5ReBYF2PCQv-gGw=/
+│   │   │   │   └── 60.1748546625482.KxJHSxog9nzxW1Hq9FjUgXXW2GMSt-3pMrDHMJr4AEY=.webp
+│   │   │   ├── OiQsa6XSG3O96nFzrfor38tAa6QnVhoQp+vGk2Q0U1I=/
+│   │   │   │   └── 60.1748546625559.ORjN9r4Ck1q6tNOrGdlR4MEOORdHl0gkE7niNuy6UD8=.webp
+│   │   │   ├── OuMyiCaoHvg+oKBeN2tVFeLijW1n0R0S-XP0RcLR-6c=/
+│   │   │   │   └── 15552000.1764095043699.BaOiJarxJamWvPDAUM43qW0QMho7IA0liE0+gel-OCE=.webp
+│   │   │   ├── oV8Hi4rirkrMw7UU16u-RtE+0h25berk7Jo-cBf5j8I=/
+│   │   │   │   └── 60.1748549205136.5ZHmVg1f7iqI9t6tNLNHRuoWmGnb34K-V+EfscAhawo=.webp
+│   │   │   ├── PE5deyhLL5UieNl90FdC27vFaPuZ62ELLWFccpmuF4I=/
+│   │   │   │   └── 60.1748469439707.tZe0ZzyXIIcmohUWp15cyZC0CgyxvjuPFTdJvOkmpto=.webp
+│   │   │   ├── PX7ttVGb3deXv0AuMZRbR+pK+3i77Pv7eN5fzKFr9Tw=/
+│   │   │   │   └── 60.1748549205917.P-rXmtNsDPR9qDAlt4GEbt8Vgk+A883p1FNPcZzKpPo=.webp
+│   │   │   ├── qyIsdcMAYfO2InD6WyWTJXOwD4w8M8J9m5FeDeECl+4=/
+│   │   │   │   └── 15552000.1764019264997.0pQvf-hWI0CdzcFO1r4ROtQxjkLlPB1SmGzmSa56BX8=.webp
+│   │   │   ├── Rc1+m3P8r6owSyiyNweAFJi5opEWntUNJQE9E5sMLC4=/
+│   │   │   │   └── 2592000.1751133585959.wVh6q2jL0oagOWtZ1DPiPqTa0-kpBcrsH6S9R2LER+A=.webp
+│   │   │   ├── rCWqfhve2TtxhB1Wv856otT4zSUOgutzIDmAG5E1Qp4=/
+│   │   │   │   └── 60.1748549205063.EMr12QwSKk748y1asO9MXc3vS29e1oH1PR-iG2cFuxg=.webp
+│   │   │   ├── rdeOacIymDuSQ7uFVmPEk90q0NdF7NRTCTR8PLGXsjA=/
+│   │   │   │   └── 60.1748546625605.NIlEOyhYVIu-Rn2QON7CUNBnpmCa2oe-HvBLuafZwqY=.webp
+│   │   │   ├── rDnLCqUajKW7ROUpiGGETfkgfWh7tENP8Ss4fkf4A-s=/
+│   │   │   │   └── 60.1748549205897.E3sFjmEESifOIRJjzaT+so4QNFE-1h59LDFWEfoKuuc=.webp
+│   │   │   ├── rJUbu9dRfSIGTtvQdkICiwh5p6mt-0pYHcIgDPat0ac=/
+│   │   │   │   └── 15552000.1764021179494.OzbHkq7ualk+BlFaXGF3JKNh6+ZKcgxdfE3tJMBW13U=.webp
+│   │   │   ├── RLQgA5MKQSbxWuzQ8TELAeAUnXkez5FKIF-G9MyNdZ8=/
+│   │   │   │   └── 60.1748549205874.mgDp0+QB29YgmO2JWndy+FUtee4bvx23aHo+etsOoSg=.webp
+│   │   │   ├── RtoU2GleegKqPUgvcZDaQVQ1EP6q5B0sKEbD5kUJQrI=/
+│   │   │   │   └── 60.1748546625611.Gb4Ejpii5kB9jxIBUobj+DKWwWQz6Kd-U2vCKm-3dgs=.webp
+│   │   │   ├── RUQuVmxzIXOs8A2TEqD8A68T9kw3SQVxLaBEK5dBsiU=/
+│   │   │   │   └── 60.1748549205479.huIALMtoDkDS8moMJZf4NDR6nNwgh72dfN1eGIypSaw=.webp
+│   │   │   ├── tL74HuCILru1w9501W0L1x9JuZo3GRj0djjCzK2UXhw=/
+│   │   │   │   └── 60.1748546969900.Zi4mjiSxghXsmgUePAKG5FXnzNUBsYXPemuoBvsHJvo=.webp
+│   │   │   ├── TqEVEyq7gpHc25MDPT6MooNPGjmQaQ15R9MN47xC8gk=/
+│   │   │   │   └── 60.1748549204992.5AVvgiDNSDqO4wXNvYlTF4FD36ccBwZl1yLNm0XqJOM=.webp
+│   │   │   ├── u6zWs49on5xOr95K9SM5mrcwBkIHM9XtdlCTNVwHBoQ=/
+│   │   │   │   └── 60.1748546625528.WxEJHo50FTaIm9tQGcOFIAvW0jGQJHIN24RIFIUNbEc=.webp
+│   │   │   ├── uGl+8Lcp5mvL3-JENIZip1tA4o2vECnBkbNuMnMeSKQ=/
+│   │   │   │   └── 31536000.1770848168434.ospiVJzgUZrUA3+xpjW2Pv+gUZm8kmW41JytqOGkXpM=.webp
+│   │   │   ├── uvGzkGvTzLZ+fE-jbx6EkWj5gV2YsYHg8ptsBcMgtsU=/
+│   │   │   │   └── 60.1748549205257.Q60+p+u3pA2ullm6Bb37kTeEfglWCyQcir-iVdTqmf0=.webp
+│   │   │   ├── uWObj4rDjgaUdZhXv+a5LISgpB9NUglsoao0oWEtQO0=/
+│   │   │   │   └── 60.1748546985129.CXGjxLE8VpDWiqQ7U-+tHsk5Tn3a6fD7U08PdFrWvZc=.webp
+│   │   │   ├── v+nJTFTeuvWnOJuaopzl6VTlOfLW94-dhpKv+WZNguc=/
+│   │   │   │   └── 60.1748546625619.tdRdiYyOkseH+HB5TbKsR84F-EU9JadG4gAkfFM3Kfw=.webp
+│   │   │   ├── VRIIWCIBhohtt01j9dsKAmwmh-8v1UJ+bna9dEomWuM=/
+│   │   │   │   └── 60.1748549205007.6gqGzdhGJQFFAjezzSz3gAUjiMY7rL0Ttko2Lu0tC3w=.webp
+│   │   │   ├── WGDRXv2Qq9TQ6AlqDpM0PJqtX1PocNLvG76Mq5ZGjtE=/
+│   │   │   │   └── 60.1748546625510.FwSSYuIFWjd17jV9tErGEN6308O3AlCEHdnU7uaC4Kg=.webp
+│   │   │   ├── WOQwZKc0YHgl3kKuQ821hjGAcpdw1zGtEOYvCqYWbPA=/
+│   │   │   │   └── 60.1748546625503.VOj83BtOKGWs2cFapS1hxNBhPV7160GbLYsxSXP5+vI=.webp
+│   │   │   ├── X+YcH3hU9-zkDo8e9KarbV0eo+ngznfgvQJjZKoyNss=/
+│   │   │   │   └── 60.1748549205315.FbBv+Tefx++6V36VnLnBOZAmjb+FBcWKzRxTNuZuKtU=.webp
+│   │   │   ├── xruiljeg53ejp0ZqV8+4qzyw5+A3pIOJgRf7hKAGg50=/
+│   │   │   │   └── 60.1748546983344.u8WpK3q+EtbL8jUS2A93zW6d0Hwm4o5NPdye-DywqkQ=.webp
+│   │   │   ├── xxTaVFhVaBUfdJgLvdI-sFXLgG-REHmKBhGSc94mUuU=/
+│   │   │   │   └── 60.1748546625541.FA3EmjujHI-7mSJVfWsUTlLOt2f4JUXwAnTRhuPjm5M=.webp
+│   │   │   ├── yc0yTDcQJDXvklQg89EKZnoM86-yU49Ka03vh9uBTG8=/
+│   │   │   │   └── 60.1748546625598.eWWGsCfIDtouUIYHrAChA59McSkAdosYp0ncVW8qS90=.webp
+│   │   │   ├── yfw0zV0ZpFjG4Z25DLi-J5EVJVRawWFtmrA3vvrhQUk=/
+│   │   │   │   └── 60.1748547014353.hAqyH9dU3z3D7i9y5Os1+B3AoR5e02knfghGuATWkUI=.webp
+│   │   │   ├── YJF0NEthh7-IpzNDyP+P02-HvKr2AfvZHCWPf5LpET0=/
+│   │   │   │   └── 60.1748549208386.HWQJvJaDZwHb-nrCbEElYEtwKivceLwG5BEoRFMHu2k=.webp
+│   │   │   ├── yUDBvo2bk5bgK4edcaBErI5tKmH1TkkNCBgnANwmlZg=/
+│   │   │   │   └── 60.1748547014292.GZ8DPdlHrgVYod6PVBu5+eik2LqWnJVXHbaocfbrnsQ=.webp
+│   │   │   ├── YXrwLC3DBXsOY4xcO3ucPEEzJTqAF4PRJ6cRC1alyOg=/
+│   │   │   │   └── 60.1748549205270.FJyVSvXmJR1BSn3HetYG51SQpvQNHF4P-kwZ66sEwCY=.webp
+│   │   │   ├── yZ6HdmEz+xjMZDNoCTp1vHlnQDFbaGMjGJFKghGX64U=/
+│   │   │   │   └── 60.1748546625565.J8iYneOnLV+pxU6aDU07lFiCgsWoPHscAHWSNLrnPik=.webp
+│   │   │   ├── Z49hU-1FjbDElpU4K1RLiebyfttsdOhPxk7bq+EIbnQ=/
+│   │   │   │   └── 60.1748547014308.L7sLvGzJBNEpJokQW-z8ENji4YRNxxH+MTX0eJiwhMw=.webp
+│   │   │   └── zJBDEqNNK2HsQnH-7hVqVsf57rRCvjcYvGQ-1UtsCw4=/
+│   │   │       └── 31536000.1770848168243.rvRUvy1KvsT5A3SVhU5A6XPDHk-E77itco98w9IhBoY=.webp
+│   │   ├── swc/
+│   │   │   └── plugins/
+│   │   │       └── v7_macos_x86_64_0.106.15/
+│   │   └── webpack/
+│   │       ├── client-development/
+│   │       │   ├── 0.pack.gz
+│   │       │   ├── 1.pack.gz
+│   │       │   ├── 10.pack.gz
+│   │       │   ├── 11.pack.gz
+│   │       │   ├── 12.pack.gz
+│   │       │   ├── 13.pack.gz
+│   │       │   ├── 14.pack.gz
+│   │       │   ├── 15.pack.gz
+│   │       │   ├── 16.pack.gz
+│   │       │   ├── 17.pack.gz
+│   │       │   ├── 18.pack.gz
+│   │       │   ├── 19.pack.gz
+│   │       │   ├── 2.pack.gz
+│   │       │   ├── 20.pack.gz
+│   │       │   ├── 3.pack.gz
+│   │       │   ├── 4.pack.gz
+│   │       │   ├── 5.pack.gz
+│   │       │   ├── 6.pack.gz
+│   │       │   ├── 7.pack.gz
+│   │       │   ├── 8.pack.gz
+│   │       │   ├── 9.pack.gz
+│   │       │   ├── index.pack.gz
+│   │       │   └── index.pack.gz.old
+│   │       ├── client-development-fallback/
+│   │       │   ├── 0.pack.gz
+│   │       │   ├── index.pack.gz
+│   │       │   └── index.pack.gz.old
+│   │       └── server-development/
+│   │           ├── 0.pack.gz
+│   │           ├── 1.pack.gz
+│   │           ├── 10.pack.gz
+│   │           ├── 11.pack.gz
+│   │           ├── 12.pack.gz
+│   │           ├── 13.pack.gz
+│   │           ├── 14.pack.gz
+│   │           ├── 15.pack.gz
+│   │           ├── 16.pack.gz
+│   │           ├── 17.pack.gz
+│   │           ├── 18.pack.gz
+│   │           ├── 19.pack.gz
+│   │           ├── 2.pack.gz
+│   │           ├── 3.pack.gz
+│   │           ├── 4.pack.gz
+│   │           ├── 5.pack.gz
+│   │           ├── 6.pack.gz
+│   │           ├── 7.pack.gz
+│   │           ├── 8.pack.gz
+│   │           ├── 9.pack.gz
+│   │           ├── index.pack.gz
+│   │           └── index.pack.gz.old
+│   ├── server/
+│   │   ├── app/
+│   │   │   ├── (dashboard)/
+│   │   │   │   └── list/
+│   │   │   │       └── students/
+│   │   │   │           ├── page.js
+│   │   │   │           └── page_client-reference-manifest.js
+│   │   │   ├── favicon.ico/
+│   │   │   │   └── route.js
+│   │   │   └── sign-in/
+│   │   │       ├── page.js
+│   │   │       └── page_client-reference-manifest.js
+│   │   ├── vendor-chunks/
+│   │   │   ├── @hookform.js
+│   │   │   ├── @swc.js
+│   │   │   ├── asynckit.js
+│   │   │   ├── axios.js
+│   │   │   ├── call-bind-apply-helpers.js
+│   │   │   ├── combined-stream.js
+│   │   │   ├── debug.js
+│   │   │   ├── delayed-stream.js
+│   │   │   ├── dunder-proto.js
+│   │   │   ├── es-define-property.js
+│   │   │   ├── es-errors.js
+│   │   │   ├── es-object-atoms.js
+│   │   │   ├── es-set-tostringtag.js
+│   │   │   ├── follow-redirects.js
+│   │   │   ├── form-data.js
+│   │   │   ├── function-bind.js
+│   │   │   ├── get-intrinsic.js
+│   │   │   ├── get-proto.js
+│   │   │   ├── gopd.js
+│   │   │   ├── has-flag.js
+│   │   │   ├── has-symbols.js
+│   │   │   ├── has-tostringtag.js
+│   │   │   ├── hasown.js
+│   │   │   ├── lucide-react.js
+│   │   │   ├── math-intrinsics.js
+│   │   │   ├── mime-db.js
+│   │   │   ├── mime-types.js
+│   │   │   ├── ms.js
+│   │   │   ├── next.js
+│   │   │   ├── proxy-from-env.js
+│   │   │   ├── react-hook-form.js
+│   │   │   ├── supports-color.js
+│   │   │   └── zod.js
+│   │   ├── _ssr_src_components_forms_StudentForm_tsx.js
+│   │   ├── _ssr_src_components_forms_TeacherForm_tsx.js
+│   │   ├── app-paths-manifest.json
+│   │   ├── interception-route-rewrite-manifest.js
+│   │   ├── middleware-build-manifest.js
+│   │   ├── middleware-manifest.json
+│   │   ├── middleware-react-loadable-manifest.js
+│   │   ├── next-font-manifest.js
+│   │   ├── next-font-manifest.json
+│   │   ├── pages-manifest.json
+│   │   ├── server-reference-manifest.js
+│   │   ├── server-reference-manifest.json
+│   │   └── webpack-runtime.js
+│   ├── static/
+│   │   ├── chunks/
+│   │   │   ├── app/
+│   │   │   │   ├── (dashboard)/
+│   │   │   │   │   ├── list/
+│   │   │   │   │   │   └── students/
+│   │   │   │   │   │       └── page.js
+│   │   │   │   │   └── layout.js
+│   │   │   │   ├── sign-in/
+│   │   │   │   │   └── page.js
+│   │   │   │   └── layout.js
+│   │   │   ├── _app-pages-browser_src_components_forms_StudentForm_tsx.js
+│   │   │   ├── _app-pages-browser_src_components_forms_TeacherForm_tsx.js
+│   │   │   ├── app-pages-internals.js
+│   │   │   ├── main-app.js
+│   │   │   ├── polyfills.js
+│   │   │   └── webpack.js
+│   │   ├── css/
+│   │   │   └── app/
+│   │   │       └── layout.css
+│   │   ├── development/
+│   │   │   ├── _buildManifest.js
+│   │   │   └── _ssgManifest.js
+│   │   ├── media/
+│   │   │   ├── 26a46d62cd723877-s.woff2
+│   │   │   ├── 55c55f0601d81cf3-s.woff2
+│   │   │   ├── 581909926a08bbc8-s.woff2
+│   │   │   ├── 6d93bde91c0c2823-s.woff2
+│   │   │   ├── 97e0cb1ae144a2a9-s.woff2
+│   │   │   ├── a34f9d1faa5f3315-s.p.woff2
+│   │   │   └── df0a9ae256c0569c-s.woff2
+│   │   └── webpack/
+│   │       ├── app/
+│   │       │   └── layout.bbac1b8a3d664c90.hot-update.js
+│   │       ├── 2bb781cea7724de3.webpack.hot-update.json
+│   │       ├── 633457081244afec._.hot-update.json
+│   │       ├── bbac1b8a3d664c90.webpack.hot-update.json
+│   │       ├── webpack.2bb781cea7724de3.hot-update.js
+│   │       └── webpack.bbac1b8a3d664c90.hot-update.js
+│   ├── types/
+│   │   ├── app/
+│   │   │   ├── (dashboard)/
+│   │   │   │   ├── list/
+│   │   │   │   │   └── students/
+│   │   │   │   │       └── page.ts
+│   │   │   │   └── layout.ts
+│   │   │   ├── sign-in/
+│   │   │   │   └── page.ts
+│   │   │   └── layout.ts
+│   │   └── package.json
+│   ├── app-build-manifest.json
+│   ├── build-manifest.json
+│   ├── package.json
+│   ├── react-loadable-manifest.json
+│   └── trace
+├── output/
+│   ├── code_dump.txt
+│   └── tree.txt
 ├── public/
 │   ├── .DS_Store
 │   ├── announcement.png
@@ -138,4 +523,5 @@ next-dashboard-ui-completed/
 ├── postcss.config.mjs
 ├── README.md
 ├── tailwind.config.ts
+├── tree.txt
 └── tsconfig.json
