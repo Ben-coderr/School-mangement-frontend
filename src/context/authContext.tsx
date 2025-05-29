@@ -6,14 +6,14 @@ import api from '@/lib/axios';
 
 type User = {
     id: string;
-    email: string;
+    username: string;
     fullName: string;
     role: 'ADMIN' | 'TEACHER' | 'PARENT' | 'STUDENT';
 };
 
 interface AuthContextType {
     user: User | null;
-    login: (credentials: { email: string; password: string }, rememberMe: boolean) => Promise<boolean>;
+    login: (credentials: { username: string; password: string }, rememberMe: boolean) => Promise<boolean>;
     logout: () => void;
     isAuthenticated: boolean;
 }
@@ -42,7 +42,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         verifyAuth();
     }, []);
 
-    const login = async (credentials: { email: string; password: string }, rememberMe: boolean) => {
+    const login = async (credentials: { username: string; password: string }, rememberMe: boolean) => {
         try {
             const { data } = await api.post('/auth/login', credentials);
 

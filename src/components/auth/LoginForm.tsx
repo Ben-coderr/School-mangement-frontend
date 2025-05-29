@@ -6,7 +6,7 @@ import SocialLogin from './SocialLogin';
 import { useAuth } from '../../context/authContext';
 
 const LoginForm: React.FC = () => {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
@@ -17,7 +17,7 @@ const LoginForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!email || !password) {
+    if (!username || !password) {
       setError('Please fill in all fields');
       return;
     }
@@ -27,10 +27,10 @@ const LoginForm: React.FC = () => {
       setError('');
 
       // Pass rememberMe as second argument
-      const success = await login({ email, password }, rememberMe);
+      const success = await login({ username, password }, rememberMe);
 
       if (!success) {
-        setError('Invalid email or password');
+        setError('Invalid username or password');
       }
     } catch (err) {
       setError('An error occurred during login');
@@ -49,13 +49,13 @@ const LoginForm: React.FC = () => {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <InputField
-              id="email"
-              type="email"
-              label="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              id="username"
+              type="username"
+              label="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               icon={<Mail className="h-5 w-5 text-gray-400" />}
-              placeholder="Enter your email"
+              placeholder="Enter your username"
               required
           />
 
