@@ -26,7 +26,7 @@ const menuItems: MenuSection[] = [
     items: [
       { icon: '/home.png',       label: 'Home',        href: '/',               visible: [] },
       { icon: '/teacher.png',    label: 'Teachers',    href: '/list/teachers',  visible: ['ADMIN', 'TEACHER'] },
-      { icon: '/student.png',    label: 'Students',    href: '/list/students',  visible: ['ADMIN', 'TEACHER'] },
+      { icon: '/student.png',    label: 'Students',    href: '/list/students',  visible: ['ADMIN', 'TEACHER','PARENT'] },
       { icon: '/parent.png',     label: 'Parents',     href: '/list/parents',   visible: ['ADMIN', 'TEACHER'] },
       { icon: '/subject.png',    label: 'Subjects',    href: '/list/subjects',  visible: ['ADMIN'] },
       { icon: '/class.png',      label: 'Classes',     href: '/list/classes',   visible: ['ADMIN', 'TEACHER'] },
@@ -36,7 +36,7 @@ const menuItems: MenuSection[] = [
       { icon: '/result.png',     label: 'Results',     href: '/list/results',   visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
       { icon: '/attendance.png', label: 'Attendance',  href: '/list/attendance', visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
       { icon: '/calendar.png',   label: 'Events',      href: '/list/events',    visible: [] },
-      { icon: '/message.png',    label: 'Messages',    href: '/list/announcements',  visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
+      { icon: '/message.png',    label: 'Messages',    href: '/list/messages',  visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
       { icon: '/announcement.png', label: 'Announcements', href: '/list/announcements', visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
     ],
   },
@@ -44,7 +44,7 @@ const menuItems: MenuSection[] = [
     title: 'OTHER',
     items: [
       { icon: '/profile.png',  label: 'Profile',  href: '/profile',  visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
-      { icon: '/setting.png',  label: 'Settings', href: '/settings', visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
+      { icon: '/setting.png',  label: 'Settings', href: '/settings', visible: [] },
       { icon: '/logout.png',   label: 'Logout',   href: '/sign-in',   visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
     ],
   },

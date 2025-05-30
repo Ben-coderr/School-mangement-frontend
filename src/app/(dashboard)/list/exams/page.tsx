@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import FormModal from '@/components/FormModal';
-import Pagination from '@/components/Pagination';
 import Table from '@/components/Table';
 import TableSearch from '@/components/TableSearch';
 import Image from 'next/image';
@@ -16,8 +15,10 @@ import api from '@/lib/axios';
 type ExamItem = {
   id: number;
   title: string;
-  examDate: string; // ISO date
+  examDate: string;
   lessonId: number;
+  studentId?: number;    // provided by /teachers/… or /parents/… endpoint
+  studentName?: string;  // resolved client-side
 };
 
 /* ------------------------------------------------------------------ */
@@ -26,54 +27,103 @@ type ExamItem = {
 
 const ExamListPage = () => {
   const { user } = useAuth();
-  const isTeacher = user?.role === 'TEACHER';
+
   const isAdmin   = user?.role === 'ADMIN';
-  const canEdit   = isTeacher || isAdmin;
+  const isTeacher = user?.role === 'TEACHER';
   const isStudent = user?.role === 'STUDENT';
+  const isParent  = user?.role === 'PARENT';
+
+  const canEdit      = isAdmin || isTeacher;
+  const showStudent  = isTeacher || isParent;
 
   /* ------------------------- columns ------------------------------ */
-  const tableColumns = useMemo(
-      () => [
-        { header: 'Title', accessor: 'title' },
-        {
-          header: 'Date',
-          accessor: 'examDate',
-          className: 'hidden md:table-cell',
-        },
-        {
-          header: 'Lesson ID',
-          accessor: 'lessonId',
-          className: 'hidden md:table-cell',
-        },
-        ...(canEdit ? [{ header: 'Actions', accessor: 'action' }] : []),
-      ],
-      [canEdit],
-  );
+  const tableColumns = useMemo(() => {
+    const cols = [
+      { header: 'Title', accessor: 'title' },
+      {
+        header: 'Date',
+        accessor: 'examDate',
+        className: 'hidden md:table-cell',
+      },
+    ];
+
+    if (showStudent) {
+      cols.push({
+        header: 'Student',
+        accessor: 'studentName',
+        className: 'hidden md:table-cell',
+      });
+    }
+
+    cols.push({
+      header: 'Lesson ID',
+      accessor: 'lessonId',
+      className: 'hidden md:table-cell',
+    });
+
+    if (canEdit) cols.push({ header: 'Actions', accessor: 'action' });
+
+    return cols;
+  }, [showStudent, canEdit]);
 
   /* ---------------------------- data ------------------------------ */
-  const [exams, setExams] = useState<ExamItem[]>([]);
+  const [exams, setExams]   = useState<ExamItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error,   setError]   = useState('');
+
+  const fetchStudentNames = async (items: ExamItem[]) => {
+    // Collect unique student IDs
+    const ids = [...new Set(items.map(i => i.studentId).filter(Boolean))] as number[];
+    if (ids.length === 0) return {};
+
+    const nameMap: Record<number, string> = {};
+
+    // One call per id (replace with bulk /students?ids=… if you have it)
+    await Promise.all(
+      ids.map(async id => {
+        try {
+          const { data } = await api.get(`/students/${id}`);
+          nameMap[id] = data.fullName ?? data.name ?? `#${id}`;
+        } catch {
+          nameMap[id] = `#${id}`;
+        }
+      }),
+    );
+
+    return nameMap;
+  };
 
   const fetchExams = async () => {
     if (!user) return;
 
     const endpoint = isStudent
-        ? `/students/${user.userId}/exams`
-        : isTeacher
-            ? `/teachers/${user.userId}/exams`
-            : '/exams';
+      ? `/students/${user.userId}/exams`
+      : isTeacher
+      ? `/teachers/${user.userId}/exams`
+      : isParent
+      ? `/parents/${user.userId}/students/exams`
+      : '/exams';
 
     try {
       const { data } = await api.get(endpoint);
-      setExams(
-          data.map((e: any) => ({
-            id:       e.id,
-            title:    e.title,
-            examDate: e.examDate,
-            lessonId: e.lessonId,
-          })),
-      );
+
+      const baseList: ExamItem[] = data.map((e: any) => ({
+        id:         e.id,
+        title:      e.title,
+        examDate:   e.examDate,
+        lessonId:   e.lessonId,
+        studentId:  e.studentId ?? e.student?.id,
+      }));
+
+      // Resolve names only when needed
+      if (showStudent) {
+        const nameMap = await fetchStudentNames(baseList);
+        baseList.forEach(item => {
+          if (item.studentId) item.studentName = nameMap[item.studentId];
+        });
+      }
+
+      setExams(baseList);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to fetch exams');
     } finally {
@@ -90,68 +140,72 @@ const ExamListPage = () => {
 
   /* ------------------------ row renderer -------------------------- */
   const renderRow = (item: ExamItem) => (
-      <tr
-          key={item.id}
-          className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-lamaPurpleLight"
-      >
-        <td className="flex items-center gap-4 p-4">{item.title}</td>
-        <td className="hidden md:table-cell">{item.examDate}</td>
-        <td className="hidden md:table-cell">{item.lessonId}</td>
+    <tr
+      key={item.id}
+      className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-lamaPurpleLight"
+    >
+      <td className="flex items-center gap-4 p-4">{item.title}</td>
+      <td className="hidden md:table-cell">{item.examDate}</td>
 
-        {canEdit && (
-            <td>
-              <div className="flex items-center gap-2">
-                <FormModal
-                    table="exam"
-                    type="update"
-                    data={item}
-                    onSuccess={fetchExams}
-                />
-                <FormModal
-                    table="exam"
-                    type="delete"
-                    id={item.id}
-                    onSuccess={fetchExams}
-                />
-              </div>
-            </td>
-        )}
-      </tr>
+      {showStudent && (
+        <td className="hidden md:table-cell">
+          {item.studentName ?? '—'}
+        </td>
+      )}
+
+      <td className="hidden md:table-cell">{item.lessonId}</td>
+
+      {canEdit && (
+        <td>
+          <div className="flex items-center gap-2">
+            <FormModal
+              table="exam"
+              type="update"
+              data={item}
+              onSuccess={fetchExams}
+            />
+            <FormModal
+              table="exam"
+              type="delete"
+              id={item.id}
+              onSuccess={fetchExams}
+            />
+          </div>
+        </td>
+      )}
+    </tr>
   );
 
-  /* ---------------------------- states ---------------------------- */
+  /* ------------------------ UI states ----------------------------- */
   if (loading) return <div className="p-4 text-center">Loading exams…</div>;
   if (error)   return <div className="p-4 text-red-500">Error: {error}</div>;
 
-  /* ---------------------------- render ---------------------------- */
+  /* ------------------------- render ------------------------------- */
   return (
-      <div className="bg-white p-4 rounded-md flex-1 m-4 mt-0">
-        {/* toolbar */}
-        <div className="flex items-center justify-between">
-          <h1 className="hidden md:block text-lg font-semibold">Exams</h1>
+    <div className="bg-white p-4 rounded-md flex-1 m-4 mt-0">
+      {/* toolbar */}
+      <div className="flex items-center justify-between">
+        <h1 className="hidden md:block text-lg font-semibold">Exams</h1>
 
-          <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
-            <TableSearch />
-            <div className="flex items-center gap-4 self-end">
-              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
-                <Image src="/filter.png" alt="Filter" width={14} height={14} />
-              </button>
-              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
-                <Image src="/sort.png" alt="Sort" width={14} height={14} />
-              </button>
-              {canEdit && (
-                  <FormModal table="exam" type="create" onSuccess={fetchExams} />
-              )}
-            </div>
+        <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
+          <TableSearch />
+          <div className="flex items-center gap-4 self-end">
+            {/* <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
+              <Image src="/filter.png" alt="Filter" width={14} height={14} />
+            </button> */}
+            <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
+              <Image src="/sort.png" alt="Sort" width={14} height={14} />
+            </button>
+            {canEdit && (
+              <FormModal table="exam" type="create" onSuccess={fetchExams} />
+            )}
           </div>
         </div>
-
-        {/* table */}
-        <Table columns={tableColumns} renderRow={renderRow} data={exams} />
-
-        {/* pagination */}
-        {/*<Pagination />*/}
       </div>
+
+      {/* table */}
+      <Table columns={tableColumns} renderRow={renderRow} data={exams} />
+    </div>
   );
 };
 
