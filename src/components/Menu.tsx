@@ -24,7 +24,7 @@ const menuItems: MenuSection[] = [
   {
     title: 'MENU',
     items: [
-      { icon: '/home.png',       label: 'Home',        href: '/',               visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
+      { icon: '/home.png',       label: 'Home',        href: '/',               visible: [] },
       { icon: '/teacher.png',    label: 'Teachers',    href: '/list/teachers',  visible: ['ADMIN', 'TEACHER'] },
       { icon: '/student.png',    label: 'Students',    href: '/list/students',  visible: ['ADMIN', 'TEACHER'] },
       { icon: '/parent.png',     label: 'Parents',     href: '/list/parents',   visible: ['ADMIN', 'TEACHER'] },
@@ -35,8 +35,8 @@ const menuItems: MenuSection[] = [
       { icon: '/assignment.png', label: 'Assignments', href: '/list/assignments', visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
       { icon: '/result.png',     label: 'Results',     href: '/list/results',   visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
       { icon: '/attendance.png', label: 'Attendance',  href: '/list/attendance', visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
-      { icon: '/calendar.png',   label: 'Events',      href: '/list/events',    visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
-      { icon: '/message.png',    label: 'Messages',    href: '/list/messages',  visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
+      { icon: '/calendar.png',   label: 'Events',      href: '/list/events',    visible: [] },
+      { icon: '/message.png',    label: 'Messages',    href: '/list/announcements',  visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
       { icon: '/announcement.png', label: 'Announcements', href: '/list/announcements', visible: ['ADMIN', 'TEACHER', 'STUDENT', 'PARENT'] },
     ],
   },

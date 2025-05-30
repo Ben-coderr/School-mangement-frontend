@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import api from '@/lib/axios';
 
 type User = {
-    id: string;
+    userId: number;
     username: string;
     fullName: string;
     role: 'ADMIN' | 'TEACHER' | 'PARENT' | 'STUDENT';
@@ -54,7 +54,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
             const userData = JSON.parse(atob(data.token.split('.')[1]));
             setUser(userData);
-            router.push('/list/students');
+            router.push('/list/announcements');
             return true;
         } catch (error) {
             console.error('Login error:', error);
